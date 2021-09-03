@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student grade</title>
+    <link rel="stylesheet" href="grade.css">
+</head>
+<body>
+
+    <h1>Retrieve your grade</h1>
+    <p>Get your Grade</p>
+    <form action="http://mumstudents.org/params.php">
+        <fieldset>
+    <label for="firstname">first name</label>
+    <input type="text" name="name" value="Adane" class="input-field"> <br>
+    <label for="lastName">last name</label>
+    <input type="text" name="name" value="Adane" class="input-field"> <br>
+    <label for="ID">ID</label>
+     <input type="number" name="ID" value="1234"> <br>
+     <label for="select">select your assignmet</label>
+      <select name="assignment" id="">
+          <option value="assignment">assignment1</option>
+          <option value="assignmet">assignment2</option>
+          <option value="assignment">assignmet3</option>
+          <option value="assigment">assignment4</option>
+          <option value="assignment">assignemnet</option>
+      </select> <br>
+      <label for="entry">your entry</label> <br>
+    <input type="radio" name="year" value="2019"> 2019
+    <input type="radio" name="year" value="2020"> 2020
+    <input type="radio" name="year" value="2021"> 2021
+    <input type="radio" name="year" value="2021"> 2022 <br>
+    <label for="check1"> click here if this is you? </label>
+     <input type="checkbox"><br>
+    <input type="submit">
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+label{
+    margin: 2%;
+}
+input{
+    margin: 2%;
+}
+fieldset{
+    width: 10%;
+    border: blue;
+}
+
+body{
+    margin-left: 20%;
+    background-color: blue;
+    color: lavender;
+}

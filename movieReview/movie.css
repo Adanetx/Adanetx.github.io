@@ -12,11 +12,13 @@ body {
   font-weight: 24pt;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 3px 3px #999999;
+  background-repeat: repeat;
   margin: 0;
 }
 
 .tm {
   text-align: center;
+  text-shadow: 3px 3px #999999;
 }
 .eleven {
   position: fixed;

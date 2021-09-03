@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <form action="http://mumstudents.org/params.php" class="form-example">
+        <fieldset class="fild">
+            <legend class="legend">new user signup</legend>
+            <div class="one">
+                <label for="Name">Name</label>
+                <input type="text" name="name" size="16" class="name">
+            </div>
+            <div class="two">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male" class="gender"> male
+                <input type="radio" name="gender" value="female" checked class="gender1"> female
+            </div>
+            <div class="three">
+                <label for="age">Age</label>
+                <input type="text" name="age" maxlength="2" size="6" class="age">
+            </div>
+            <div class="four">
+                <label for="personality"> <a href="http://www.humanmetrics.com/cgi-winJTypes2.asp">personality
+                        type</a></label>
+                <input type="text" maxlength="6" class="person" size="6"> <label for="don't" class="red">(do not show
+                    your type.)</label>
+            </div>
+            <div class="five">
+                <label for="for OS" class="os">favororite OS</label>
+                <select name="os" id="" class="os">
+                    <option value="window">Window</option>
+                    <option value="Mac">Mac</option>
+                    <option value="Linux">Linux</option>
+                    <option value="OS X"></option>
+                </select>
+            </div>
+            <div class="six">
+                <label for="seeking">seeking age</label>
+                <input type="text" value="min" class="seek" maxlength="2" size="6"> to <input type="text" value="max"
+                    maxlength="2" size="6" class="see1">
+            </div>
+            <div class="seven">
+                <button type="submit">sign up</button>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
