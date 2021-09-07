@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCIImation</title>
+    <link rel="stylesheet" href="ascii.css">
+    <script src="ascii.js" tyepe="text/javascript"></script>
+    <script src="animations.js" tyepe="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="h01">CSE 190 M ASCII Animation Viewer</h1>
+        <textarea name="mytextarea" id="mytextarea" cols="80" rows="20" class="textArea"></textarea>
+        <div class="container one">
+            <div class="row">
+                <fieldset class="col">
+                    <legend>play controls:</legend>
+                    <input type="button" value="start" id="start">
+                    <input type="button" value="stop" id="stop">
+                </fieldset>
+                <fieldset class="col">
+                    <legend>Animations:</legend>
+                    <select name="sec" id="sec">
+                <option value="blank">Blank</option>
+                <option value="exercise" >Exercise</option>
+                <option value="juggler" >Juggler</option>
+                <option value="bike" >Bike</option>
+                <option value="dive"  >Dive</option>
+                <option value="custom" >Custom</option>
+            </select>
+                </fieldset>
+                <fieldset class="col">
+                    <legend>size</legend>
+                    <select name="sizes" id="sizes">
+                <option value="12pt">medium</option>
+                <option value="7pt">Tiny</option>
+                <option value="10pt">Small</option>
+                <option value="16pt">Large</option>
+                <option value="24pt">Extra Large</option>
+                <option value="32pt">XXL</option>
+            </select>
+                </fieldset>
+                <fieldset class="col">
+                    <legend>speed</legend>
+                    <input type="checkbox" id="check"> Turbo
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
