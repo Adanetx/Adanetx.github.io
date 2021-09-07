@@ -39,3 +39,9 @@ body {
 fieldset {
     border: 5px solid black;
 }
+
+.al {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
