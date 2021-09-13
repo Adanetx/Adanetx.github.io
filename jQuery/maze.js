@@ -1,12 +1,7 @@
-var win = true;
-$(function() {
-    $('#maze .boundary').off();
-    $('#end').off();
-    $('#start').click(reset);
-});
+var bit = true;
 
 function red() {
-    win = false;
+    bit = false;
     $('#status').text('You lose!').css('color', 'red');
     $('.boundary').each(function() {
         $(this).addClass('youlose')
@@ -14,13 +9,13 @@ function red() {
 }
 
 function end() {
-    let status2 = win == true ? 'You win! :)' : 'Sorry, you lost! :('
+    let status2 = bit == true ? 'You win! :]' : 'Sorry, you lost! :['
     $('#status').text(status2);
     $('#maze .boundary').off();
 }
 
 function reset() {
-    win = true;
+    bit = true;
     $('#status').text('Game Started!').css('color', 'green');
     $('.boundary').each(function() {
         $(this).removeClass('youlose');
@@ -31,7 +26,15 @@ function reset() {
 }
 
 function end() {
-    let status2 = win == true ? 'You win! :)' : 'Sorry, you lost! :('
+    let status2 = bit == true ? 'You win! :' : 'Sorry, you lost! :['
     $('#status').text(status2);
     $('#maze .boundary').off();
 }
+
+$(function() {
+    $('#maze .boundary').off();
+    $('#end').off();
+    $('#start').click(reset);
+
+
+});
