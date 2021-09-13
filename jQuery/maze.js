@@ -8,6 +8,12 @@ function red() {
     });
 }
 
+function end() {
+    let status2 = bit == true ? 'You win! :' : 'Sorry, you lost! :['
+    $('#status').text(status2);
+    $('#maze .boundary').off();
+}
+
 function reset() {
     bit = true;
     $('#status').text('Game Started!').css('color', 'green');
@@ -19,11 +25,7 @@ function reset() {
     $('#end').on('mouseover', end);
 }
 
-function end() {
-    let status2 = bit == true ? 'You win! :' : 'Sorry, you lost! :['
-    $('#status').text(status2);
-    $('#maze .boundary').off();
-}
+
 
 $(function() {
     $('#maze .boundary').off();
