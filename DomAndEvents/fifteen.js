@@ -104,7 +104,7 @@ $(function() {
         return array12;
     };
 
-    vargetRandomEmptyArea = function(array12) {
+    var getRandomEmptyArea = function(array12) {
         let elements = array12.length;
         let divRandomIndex = Math.floor(Math.random() * elements);
         var randomlyCreatedDiv = $("#puzzlearea div")[divRandomIndex];
