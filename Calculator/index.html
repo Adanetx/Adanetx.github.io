@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        input {
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            color: black;
+        }
+        
+        fieldset {
+            width: 25%;
+        }
+        
+        legend {
+            font-family: cursive;
+            color: tomato;
+            font-weight: bolder;
+        }
+        
+        body {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: pink; font-family: Arial, Helvetica, sans-serif;">Simple Calculator</h1>
+    <form action="/index" method="POST">
+        <fieldset>
+            <legend>please enter two numbers</legend>
+            <input type="text" name="first"> <br>
+            <input type="text" name="second"> <br>
+            <select name="calculate" id="calculate">
+           <option value="add">add</option>
+           <option value="subtract">subtract</option>
+           <option value="multiply">multiply</option>
+           <option value="division">division</option>
+       </select>
+            <input type="submit" value="calculate">
+        </fieldset>
+    </form>
+</body>
+
+</html>
