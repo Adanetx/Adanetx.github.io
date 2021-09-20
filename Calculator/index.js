@@ -29,7 +29,9 @@ app.post("/index", (req, res) => {
             result = x / y;
             break;
     }
-    res.send(`<h3 style="width: 50%; margin-left: auto; marigin-right: auto" >The Answer is: ${result} <br> <a href ="http://localhost:8080/"> another calculation</a> </h3>`);
+    res.send(`<h3 style="width: 50%; margin-left: auto;
+     marigin-right: auto" >The Answer is: ${result} <br>
+      <a href ="http://localhost:8080/"> another calculation</a> </h3>`);
 });
 app.get("/", (req, res) => {
     res.sendFile("index.html", { root: __dirname });
